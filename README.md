@@ -1,4 +1,4 @@
-# The-Arkan-Project
+# The Arkan Project
 
 
 # Team Members and Roles
