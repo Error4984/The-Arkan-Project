@@ -2,10 +2,10 @@
 
 
 # Team Members and Roles
-* Eli:
+* Eli: Lead Developer and Game Designer
 * Henry:
 * James:
-* Owen: Main: Sound Design/ Sub: Lore and Map design
+* Owen: Main: Sound Design/ Sub: Lore and Map Design
 
 # Overview of Game 1
 
