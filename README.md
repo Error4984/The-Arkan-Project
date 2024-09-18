@@ -5,7 +5,7 @@
 * Eli:
 * Henry:
 * James:
-* Owen:
+* Owen: Main: Sound Design/ Sub: Lore and Map design
 
 # Overview of Game 1
 
