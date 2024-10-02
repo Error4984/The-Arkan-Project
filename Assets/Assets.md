@@ -4,6 +4,8 @@
 3. Throwing Knife
 4. Roit Sheild
 5. Data Chip
+6. Base Tank (without turret)
+7. Upgraded Tank (without artillerey and base turret)
 
 # DLC Items:
 1. Specter (pistol) expierement 04
