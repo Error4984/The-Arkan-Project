@@ -1,9 +1,9 @@
 # Assets:
- Kinetic Katana (Radon) expierement 05
- Backfire (Boomerang sword)
- Throwing Knife
- Roit Sheild
- Data Chip
+1. Kinetic Katana (Radon) expierement 05
+2. Backfire (Boomerang sword)
+3. Throwing Knife
+4. Roit Sheild
+5. Data Chip
 
 # DLC Items:
 1. Specter (pistol) expierement 04
