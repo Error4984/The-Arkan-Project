@@ -30,3 +30,27 @@
 20. Upgraded 10 mm Auto Cannon
 21. Conduit (SMG)
 22. Grenade
+
+# Sounds:
+1. log 064
+2. log 165
+3. log 206
+4. log 224
+5. log 236
+6. log 247
+7. log 269
+8. log 284
+9. log 301
+10. log 312
+11. log 325
+12. log 329
+13. log 346
+14. log 368
+15. log 379
+16. log 402
+17. log 427
+18. log 456
+19. log 471
+20. log 479
+21. log 513
+
