@@ -2,7 +2,7 @@
 1. Kinetic Katana (Radon) expierement 05
 2. Backfire (Boomerang sword)
 3. Throwing Knife
-4. Roit Sheild
+4. Riot Sheild
 5. Data Chip
 6. Base Tank (without turret)
 7. Upgraded Tank (without artillerey and base turret)
