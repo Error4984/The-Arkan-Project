@@ -89,6 +89,6 @@
 30. Normal 
 31. Ranged deep clicking
 32. Healer high piched sounds
-33. Spawner chalkboard screeching
+33. Spawner tearing through metal sheet 
 34. Cloaker whooshes
 
