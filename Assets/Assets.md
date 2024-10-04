@@ -31,6 +31,32 @@
 21. Conduit (SMG)
 22. Grenade
 
+# Images:
+![Screenshot 2024-09-25 at 8 03 19 AM](https://github.com/user-attachments/assets/ec3602ea-91d2-46fb-bcca-eb3412a4997f)
+![Screenshot 2024-09-25 at 8 03 39 AM](https://github.com/user-attachments/assets/c6c9580e-7407-4870-a7ca-e347872738af)
+![Screenshot 2024-09-25 at 8 04 11 AM](https://github.com/user-attachments/assets/65ceb1a4-a802-4e45-b847-6a9850a12ca1)
+![Screenshot 2024-09-25 at 8 04 29 AM](https://github.com/user-attachments/assets/2cf46f82-a06a-4a89-83a5-f60256865340)
+![Screenshot 2024-09-25 at 8 04 52 AM](https://github.com/user-attachments/assets/a029e453-5e51-460c-bd2e-e122d98e7611)
+![Screenshot 2024-09-25 at 8 05 08 AM](https://github.com/user-attachments/assets/9b66a2d7-eca1-4a08-89c2-e484d9fc85ce)
+![Screenshot 2024-09-25 at 7 52 43 AM](https://github.com/user-attachments/assets/332a4014-a2ea-41fb-891c-592)
+![Screenshot 2024-09-25 at 7 55 54 AM](https://github.com/user-attachments/assets/43f49a7a-75d3-4b22-8b26-d91516c53717)
+66571e596)
+![Screenshot 2024-09-25 at 7 56 47 AM](https://github.com/user-attachments/assets/8a8598f0-a0b1-4e82-a036-0de41af6ad58)
+![Screenshot 2024-09-25 at 7 57 16 AM](https://github.com/user-attachments/assets/8c74dd00-9a2b-4ae5-9fa8-ed32adba07ba)
+![Screenshot 2024-09-25 at 7 59 25 AM](https://github.com/user-attachments/assets/6621a46b-410f-4ad3-a52e-7f2e33a52038)
+![Screenshot 2024-09-25 at 8 01 24 AM](https://github.com/user-attachments/assets/3e0da50b-e518-4c7e-b7ef-bec74794cfcc)
+![Screenshot 2024-09-25 at 8 02 38 AM](https://github.com/user-attachments/assets/e2da25b2-bb34-4938-a74c-e542a44ad53b)
+![Screenshot 2024-09-25 at 8 03 02 AM](https://github.com/user-attachments/assets/7fdafc8b-5b17-4144-8276-c77076399ffc)
+![Screenshot 2024-09-25 at 7 45 52 AM](https://github.com/user-attachments/assets/4778c90f-1d0b-45fb-bf9c-6e86abcafcf1)
+![Screenshot 2024-09-25 at 7 47 04 AM](https://github.com/user-attachments/assets/d6902490-30d2-4b7c-bc5a-5e41a363d48a)
+![Screenshot 2024-09-25 at 7 49 08 AM](https://github.com/user-attachments/assets/3a1814d0-dade-42a8-98ed-daa80d68016c)
+![Screenshot 2024-09-25 at 7 50 23 AM](https://github.com/user-attachments/assets/c9ee0481-9b54-4e44-a58c-8ae9f9047947)
+![Screenshot 2024-09-25 at 7 51 56 AM](https://github.com/user-attachments/assets/3ae8df1e-424e-4c28-8124-955fe623179a)
+
+
+
+
+
 # Sounds:
 1. log 064
 2. log 165
