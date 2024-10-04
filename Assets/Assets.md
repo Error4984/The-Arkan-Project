@@ -78,4 +78,17 @@
 19. log 471
 20. log 479
 21. log 513
+22. metal fall
+23. grass wave
+24. leaves blow
+25. character groan 1
+26. character groan 2
+27. character groan 3
+28. Dasher/Pouncer clicking
+29. Heavy roaring
+30. Normal 
+31. Ranged deep clicking
+32. Healer high piched sounds
+33. Spawner chalkboard screeching
+34. Cloaker whooshes
 
