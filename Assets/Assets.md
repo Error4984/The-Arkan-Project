@@ -6,6 +6,9 @@
 5. Data Chip
 6. Base Tank (without turret)
 7. Upgraded Tank (without artillerey and base turret)
+8. Hammer axe (base gatherthing tool)
+9. Battle axe
+10. Redeemer (Great sword)
 
 # DLC Items:
 1. Specter (pistol) expierement 04
