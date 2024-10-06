@@ -11,6 +11,7 @@
 10. Redeemer (Great sword)
 11. Spear
 12. Chainsaw Sword
+13. Pickaxe
 
 # DLC Items:
 1. Specter (pistol) expierement 04
