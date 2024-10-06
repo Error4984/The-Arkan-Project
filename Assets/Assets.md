@@ -9,6 +9,8 @@
 8. Hammer axe (base gatherthing tool)
 9. Battle axe
 10. Redeemer (Great sword)
+11. Spear
+12. Chainsaw Sword
 
 # DLC Items:
 1. Specter (pistol) expierement 04
