@@ -97,4 +97,15 @@
 32. Healer high piched sounds
 33. Spawner tearing through metal sheet 
 34. Cloaker whooshes
-
+35. door creaking
+36. footsteps (dirt)
+37. footsteps (metal)
+38. sword swinging
+39. gun firing
+40. drone flying
+41. tank treds
+42. tank engine
+43. axe chopping
+44. pickaxe hitting rock
+45. hammer hitting wood
+46. 
