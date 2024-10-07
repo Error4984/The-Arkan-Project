@@ -113,3 +113,7 @@
 48. fire cracling
 49. lava bubbling
 50. GULP
+51. tank fire
+52. snake hssssss
+53. glass breaking
+54. 
