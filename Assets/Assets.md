@@ -108,4 +108,8 @@
 43. axe chopping
 44. pickaxe hitting rock
 45. hammer hitting wood
-46. 
+46. swimming
+47. snow blowing
+48. fire cracling
+49. lava bubbling
+50. GULP
