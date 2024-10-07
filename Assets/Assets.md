@@ -123,3 +123,7 @@
 58. river flowing
 59. sliding on ground
 60. tree falling
+61. obtaning item (normal)
+62. obtaining item (key)
+63. treebranch creeking
+64. sigmas rizzing
