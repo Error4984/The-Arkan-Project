@@ -110,10 +110,16 @@
 45. hammer hitting wood
 46. swimming
 47. snow blowing
-48. fire cracling
+48. fire crackeling
 49. lava bubbling
 50. GULP
 51. tank fire
 52. snake hssssss
 53. glass breaking
-54. 
+54. chainsaw buzzing
+55. granade exploding
+56. throwing sound
+57. whooshing of thrown object
+58. river flowing
+59. sliding on ground
+60. tree falling
