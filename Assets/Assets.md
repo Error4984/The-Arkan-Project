@@ -62,7 +62,7 @@
 
 
 
-# Sounds://Owen Thibodeaux
+# Sounds:
 1. log 064
 2. log 165
 3. log 206
