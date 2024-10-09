@@ -19,6 +19,13 @@ class Normal {
 
   }
 
+  // Member Methods
+  void display() {}
+
+  void move() {}
+
+  void attack() {}
+
 
 
 
