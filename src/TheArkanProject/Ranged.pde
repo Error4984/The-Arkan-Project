@@ -3,28 +3,29 @@
 class Ranged {
   // Member Variables
   int x, y, w, h, speed, health;
-  PImage n1;
+  PImage r1;
   boolean alive, inrange;
 
   // Constructor
-  Normal() {
+  Ranged() {
     x = 0;
     y = 0;
     w = 0;
     h = 0;
     speed = 0;
     health = 0;
-    n1 = loadImage("");
+    r1 = loadImage("");
     alive = false;
     inrange = false;
-
   }
 
   // Member Methods
-  void display() {}
+  void display() {
+  }
 
-  void move() {}
+  void move() {
+  }
 
-  void projfire() {}
-
-
+  void projfire() {
+  }
+}
