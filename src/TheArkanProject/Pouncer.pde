@@ -1,6 +1,6 @@
 // Henry Baldwin
 
-class Normal {
+class Pouncer {
   // Member Variables
   int x, y, w, h, speed, health;
   PImage n1;
