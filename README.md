@@ -5,7 +5,7 @@
 * Eli: Lead Developer and Game Designer
 * Henry: Animation/Sound Design
 * James: Modeler, Map and Character Design
-* Owen: Main: Sound Design/ Sub: Lore and Map Design
+* Owen: Main: Sound Design/Sub: Lore and Map Design
 
 # Overview of Game 1
 The game focuses on being a scary survival game that incorporates engaging story and the horror aspect by adding sounds that give of a spooky vibe. For instance adding the click of an emeny without much background noise can make the player stressed or scared. The game also focuses on being a survival rpg game where you need to get home after a devastating helicopter crash.
