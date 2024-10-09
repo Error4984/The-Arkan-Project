@@ -1,4 +1,5 @@
 # The Arkan Project
+![Arkan1](https://github.com/user-attachments/assets/be16111e-6b96-4f79-9e8c-4a0fb5d4ee9b)
 
 # Team Members and Roles
 * Eli: Lead Developer and Game Designer
