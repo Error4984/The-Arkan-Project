@@ -126,4 +126,13 @@
 61. obtaning item (normal)
 62. obtaining item (key)
 63. treebranch creeking
-64. 
+64. bullet ding of falling out of gun
+65. falling into water sploosh
+66. minigun barrel turning
+67. box breaking
+68. elk scream
+69. nice
+70. elk dying
+71. Biter biting
+72. enemy dying
+73. bomb explosion
