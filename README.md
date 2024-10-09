@@ -18,4 +18,6 @@ The game focuses on being a scary survival game that incorporates engaging story
 # Image Mockups
 ![Screenshot 2024-10-07 at 7 46 05 AM](https://github.com/user-attachments/assets/25d2904e-0823-459d-95c1-300de278f129)
 
+# Game Over Screen
+![ArkanGameOver2](https://github.com/user-attachments/assets/c3ea078c-6b30-4f54-844f-0abd515b819b)
 
