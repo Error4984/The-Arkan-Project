@@ -16,17 +16,15 @@ class Normal {
     health = 0;
     n1 = loadImage("");
     alive = false;
-
   }
 
   // Member Methods
-  void display() {}
+  void display() {
+  }
 
-  void move() {}
+  void move() {
+  }
 
-  void attack() {}
-
-
-
-
+  void attack() {
+  }
 }
