@@ -12,7 +12,8 @@ The game focuses on being a scary survival game that incorporates engaging story
 # Overview of Game 2
 
 # Start Screen
-! [ArkanProjStart2Henry.png] (https://github.com/Error4984/The-Arkan-Project/blob/main/images/ArkanProjStart2Henry.png)
+![ArkanProjStart2](https://github.com/user-attachments/assets/2255eea0-6023-4a77-9739-c30762dec541)
+
 
 # Image Mockups
 ![Screenshot 2024-10-07 at 7 46 05 AM](https://github.com/user-attachments/assets/25d2904e-0823-459d-95c1-300de278f129)
