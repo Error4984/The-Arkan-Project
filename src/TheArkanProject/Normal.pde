@@ -1,5 +1,3 @@
-// Henry Baldwin
-
 class Normal {
   // Member Variables
   int x, y, w, h, speed, health;
