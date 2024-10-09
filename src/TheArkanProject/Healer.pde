@@ -1,6 +1,6 @@
 class Healer {
   // Member Variables
-  int x ,y ,w, h speed, health, healrate, attack rate, attack damage;
+  int x, y, w, h, speed, health, healrate, attackrate, attackdamage;
   PImage f1;
   boolean alive;
 
@@ -11,23 +11,22 @@ class Healer {
     y = 0;
     w = 50;
     h = 50;
-    Speed = 3;
+    speed = 3;
     health = 100;
     healrate = 10;
-    attack rate = 2.5;
-    attack damage = 20;
-    f1 loadImage ("");
+    attackrate = 3;
+    attackdamage = 20;
+    f1 = loadImage ("");
     alive = false;
-
   }
 
   // Member Methods
-  void display() {}
+  void display() {
+    
+    
+  }
 
 
-  void move() {}
-
-
-
-
+  void move() {
+  }
 }
