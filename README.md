@@ -3,7 +3,7 @@
 
 # Team Members and Roles
 * Eli: Lead Developer and Game Designer
-* Henry:
+* Henry: Animation/Sound Design
 * James: Modeler, Map and Character Design
 * Owen: Main: Sound Design/ Sub: Lore and Map Design
 
