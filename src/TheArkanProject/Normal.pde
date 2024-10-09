@@ -2,7 +2,7 @@ class Normal {
   // Member Variables
   int x, y, w, h, speed, health;
   PImage n1;
-  boolean alive;
+  boolean alive, inrange;
 
   // Constructor
   Normal() {
