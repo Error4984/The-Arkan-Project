@@ -11,9 +11,9 @@ class Heavy {
     y = 0;
     w = 50;
     h = 50;
-    speed = 3;
+    speed = 5;
     health = 350;
-    attackrate = 1;
+    attackrate = 3;
     attackdamage = 50;
     f1 = loadImage ("");
     alive = false;
