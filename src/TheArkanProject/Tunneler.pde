@@ -1,6 +1,6 @@
 class Tunneler {
   // Member Variables
-  int x, y, w, h, speed, health, attackdamage;
+  int x, y, w, h, speed, health, attackdamage, attackrate
   PImage tnl1;
   boolean alive;
 
@@ -12,7 +12,8 @@ class Tunneler {
     h = 0;
     speed = 0;
     health = 0;
-    attackdamage = 80;
+    attackdamage = 0;
+    attackrate = 0;
     tnl1 = loadImage("");
     alive = false;
 
