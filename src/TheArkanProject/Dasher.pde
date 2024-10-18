@@ -10,7 +10,7 @@ class Dasher {  // Member Variables
     h = 200;
     attackRate = 10;
     dashSpeed = 70;
-    health = 70
+    health = 70;
     speed = 17;
     f1 = loadImage("");
     alive = false;
