@@ -1,3 +1,5 @@
+// Eli Wright
+
 class Tunneler {
   // Member Variables
   int x, y, w, h, speed, health, attackdamage, attackrate;
@@ -5,28 +7,27 @@ class Tunneler {
   boolean alive;
 
   // Constructor
-  Tunneler() {
-    x = 0;
-    y = 0;
+  Tunneler(int x, int y) {
+    this.x = x;
+    this.y = y;
     w = 0;
     h = 0;
     speed = 0;
     health = 0;
     attackdamage = 0;
     attackrate = 0;
-    tnl1 = loadImage("");
     alive = false;
-
   }
 
   // Member Methods
-  void display() {}
+  void display() {
+    fill(255, 0, 0);
+    rect(x, y, 50, 50);
+  }
 
-  void move() {}
+  void move() {
+  }
 
-  void attack() {}
-
-
-
-
+  void attack() {
+  }
 }

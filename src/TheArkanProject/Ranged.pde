@@ -7,20 +7,21 @@ class Ranged {
   boolean alive, inrange;
 
   // Constructor
-  Ranged() {
-    x = 0;
-    y = 0;
+  Ranged(int x, int y) {
+    this.x = x;
+    this.y = y;
     w = 0;
     h = 0;
     speed = 0;
     health = 0;
-    r1 = loadImage("");
     alive = false;
     inrange = false;
   }
 
   // Member Methods
   void display() {
+    fill(155, 15, 95);
+    rect(x, y, 50, 50);
   }
 
   void move() {

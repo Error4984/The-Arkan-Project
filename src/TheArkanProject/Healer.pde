@@ -1,3 +1,5 @@
+// James Sturm
+
 class Healer {
   // Member Variables
   int x, y, w, h, speed, health, healrate, attackrate, attackdamage;
@@ -6,9 +8,9 @@ class Healer {
 
 
   // Constructor
-  Healer() {
-    x = 0;
-    y = 0;
+  Healer(int x, int y) {
+    this.x = x;
+    this.y = y;
     w = 50;
     h = 50;
     speed = 3;
@@ -16,14 +18,13 @@ class Healer {
     healrate = 10;
     attackrate = 3;
     attackdamage = 20;
-    f1 = loadImage ("");
     alive = false;
   }
 
   // Member Methods
   void display() {
-    
-    
+    fill(90, 160, 15);
+    rect(x, y, 50, 50);
   }
 
 

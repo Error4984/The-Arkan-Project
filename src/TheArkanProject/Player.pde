@@ -1,26 +1,26 @@
 // Henry Baldwin
 
-class Normal {
+class Player {
   // Member Variables
-  int x, y, w, h, speed, health;
+  int x, y, health, attackspeed;
   PImage n1;
   boolean alive, inrange;
+  char weaponequip;
 
   // Constructor
-  Normal(int x, int y) {
+  Player(int x, int y, char weaponequip) {
     this.x = x;
     this.y = y;
-    w = 0;
-    h = 0;
-    speed = 0;
+    attackspeed = 0;
     health = 0;
     alive = false;
+    this.weaponequip = weaponequip;
   }
 
   // Member Methods
   void display() {
     fill(0, 255, 190);
-    rect(x, y, 50, 50);
+    rect(x, y, 100, 100);
   }
 
   void move() {
