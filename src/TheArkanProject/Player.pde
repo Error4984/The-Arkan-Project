@@ -2,7 +2,7 @@
 
 class Player {
   // Member Variables
-  int x, y, health, attackspeed;
+  int x, y, health, speed, attackSpeed, move;
   PImage n1;
   boolean alive, inrange;
   char weaponequip;
@@ -11,10 +11,11 @@ class Player {
   Player(int x, int y, char weaponequip) {
     this.x = x;
     this.y = y;
-    attackspeed = 0;
+    attackSpeed = 0;
     health = 0;
     alive = false;
     this.weaponequip = weaponequip;
+    speed = 5;
   }
 
   // Member Methods
@@ -24,8 +25,18 @@ class Player {
   }
 
   void move() {
-  }
-
-  void attack() {
+    if (keyPressed) {
+      if (key == 'w' || key == 'W' ) {
+        y = y-speed;
+      } else if (key == 's' || key == 'S' ) {
+        y = y+speed;
+      } else if (key == 'a' || key == 'A' ) {
+        x = x-speed;
+      } else if (key == 'd' || key == 'D' ) {
+        x = x+speed;
+      }
+    }
+    //void attack() {
+    //}
   }
 }

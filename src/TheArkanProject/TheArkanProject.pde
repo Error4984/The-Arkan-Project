@@ -13,39 +13,61 @@ Tunneler[] tunnelers = new Tunneler[1];
 
 Player[] players= new Player[1];
 
+Timer eTimer;
+
 
 
 void setup() {
   size(500, 500);
   background(255);
-
-  cloakers[0] = new Cloaker(0, 0);
-  dashers[0] = new Dasher(60, 0);
-  healers[0] = new Healer(120, 0);
-  heavys[0] = new Heavy(180, 0);
-  normals[0] = new Normal(240, 0);
-  pouncers[0] = new Pouncer(300, 0);
-  rangeds[0] = new Ranged(360, 0);
-  spawners[0] = new Spawner(420, 0);
-  tunnelers[0] = new Tunneler(0, 60);
-  
+  //enemies
+  cloakers[0] = new Cloaker(width/2, height/2);
+  dashers[0] = new Dasher(width/2, height/2);
+  healers[0] = new Healer(width/2, height/2);
+  heavys[0] = new Heavy(width/2, height/2);
+  normals[0] = new Normal(width/2, height/2);
+  pouncers[0] = new Pouncer(width/2, height/2);
+  rangeds[0] = new Ranged(width/2, height/2);
+  spawners[0] = new Spawner(width/2, height/2);
+  tunnelers[0] = new Tunneler(width/2, height/2);
+  //player
   players[0] = new Player(0, 60, 'w');
+  //timer
+  eTimer = new Timer(1000);
+  eTimer.start();
 }
 
 void draw() {
+  if (eTimer.isFinished()) {
+    //normals[0](new Normal(width/2, height/2));
+  }
+  background(255);
   cloakers[0].display();
+  cloakers[0].move();
   dashers[0].display();
+  dashers[0].move();
   healers[0].display();
+  healers[0].move();
   heavys[0].display();
+  heavys[0].move();
   normals[0].display();
+  normals[0].move();
   pouncers[0].display();
+  pouncers[0].move();
   rangeds[0].display();
+  rangeds[0].move();
   spawners[0].display();
+  spawners[0].move();
   tunnelers[0].display();
+  tunnelers[0].move();
   players[0].display();
+  players[0].move();
 }
 
 void keyPressed() {
+}
+
+void start() {
 }
 
 void mousePressed() {

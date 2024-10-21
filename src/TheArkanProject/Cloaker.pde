@@ -2,7 +2,7 @@
 
 class Cloaker {
   // Member Variables
-  int x, y, w, h, speed, health;
+  int x, y, w, h, speed, health, m;
   PImage f1;
   boolean alive;
   //Constructer
@@ -22,5 +22,18 @@ class Cloaker {
   }
 
   void move() {
+    int m = int(random(0, 4));
+    if (m == 0) {
+      x = x+speed;
+    }
+    if (m == 1) {
+      x = x-speed;
+    }
+    if (m == 2) {
+      y = y+speed;
+    }
+    if (m == 3) {
+      y = y-speed;
+    }
   }
 }

@@ -2,7 +2,7 @@
 
 class Healer {
   // Member Variables
-  int x, y, w, h, speed, health, healrate, attackrate, attackdamage;
+  int x, y, w, h, speed, health, healrate, attackrate, attackdamage, m;
   PImage f1;
   boolean alive;
 
@@ -29,5 +29,18 @@ class Healer {
 
 
   void move() {
+    int m = int(random(0, 4));
+    if (m == 0) {
+      x = x+speed;
+    }
+    if (m == 1) {
+      x = x-speed;
+    }
+    if (m == 2) {
+      y = y+speed;
+    }
+    if (m == 3) {
+      y = y-speed;
+    }
   }
 }

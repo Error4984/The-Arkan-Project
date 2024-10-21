@@ -2,7 +2,7 @@
 
 class Normal {
   // Member Variables
-  int x, y, w, h, speed, health;
+  int x, y, w, h, speed, health, m;
   PImage n1;
   boolean alive, inrange;
 
@@ -15,6 +15,7 @@ class Normal {
     speed = 0;
     health = 0;
     alive = false;
+    speed = 5;
   }
 
   // Member Methods
@@ -24,6 +25,19 @@ class Normal {
   }
 
   void move() {
+    int m = int(random(0, 4));
+    if (m == 0) {
+      x = x+speed;
+    }
+    if (m == 1) {
+      x = x-speed;
+    }
+    if (m == 2) {
+      y = y+speed;
+    }
+    if (m == 3) {
+      y = y-speed;
+    }
   }
 
   void attack() {

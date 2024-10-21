@@ -1,7 +1,7 @@
 // Owen Thibodeaux
 
 class Dasher {  // Member Variables
-  int x, y, w, h, speed, health, dashSpeed, attackRate;
+  int x, y, w, h, speed, health, dashSpeed, attackRate, m;
   PImage f1;
   boolean alive;
   //Constructer
@@ -24,5 +24,18 @@ class Dasher {  // Member Variables
   }
 
   void move() {
+    int m = int(random(0, 4));
+    if (m == 0) {
+      x = x+speed;
+    }
+    if (m == 1) {
+      x = x-speed;
+    }
+    if (m == 2) {
+      y = y+speed;
+    }
+    if (m == 3) {
+      y = y-speed;
+    }
   }
 }
