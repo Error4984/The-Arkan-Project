@@ -12,14 +12,14 @@ Spawner[] spawners = new Spawner[1];
 Tunneler[] tunnelers = new Tunneler[1];
 
 Player[] players= new Player[1];
-boolean play;
+boolean play = false;
 PImage start;
 Timer eTimer;
 
 
 
 void setup() {
-  size(1500, 900);
+  size(1050, 750);
   background(255);
   start = loadImage("ArkanProjStart2Henry.png");
   start.resize(width, height);
@@ -43,30 +43,31 @@ void setup() {
 void draw() {
   if (!play) {
     image(start, 0, 0);
+  } else {
+
+
+    background(255);
+    cloakers[0].display();
+    cloakers[0].move();
+    dashers[0].display();
+    dashers[0].move();
+    healers[0].display();
+    healers[0].move();
+    heavys[0].display();
+    heavys[0].move();
+    normals[0].display();
+    normals[0].move();
+    pouncers[0].display();
+    pouncers[0].move();
+    rangeds[0].display();
+    rangeds[0].move();
+    spawners[0].display();
+    spawners[0].move();
+    tunnelers[0].display();
+    tunnelers[0].move();
+    players[0].display();
+    players[0].move();
   }
-
-
-  background(255);
-  cloakers[0].display();
-  cloakers[0].move();
-  dashers[0].display();
-  dashers[0].move();
-  healers[0].display();
-  healers[0].move();
-  heavys[0].display();
-  heavys[0].move();
-  normals[0].display();
-  normals[0].move();
-  pouncers[0].display();
-  pouncers[0].move();
-  rangeds[0].display();
-  rangeds[0].move();
-  spawners[0].display();
-  spawners[0].move();
-  tunnelers[0].display();
-  tunnelers[0].move();
-  players[0].display();
-  players[0].move();
 }
 
 void keyPressed() {
@@ -76,4 +77,5 @@ void start() {
 }
 
 void mousePressed() {
+  play = true;
 }
