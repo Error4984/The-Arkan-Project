@@ -12,14 +12,17 @@ Spawner[] spawners = new Spawner[1];
 Tunneler[] tunnelers = new Tunneler[1];
 
 Player[] players= new Player[1];
-
+boolean play;
+PImage start;
 Timer eTimer;
 
 
 
 void setup() {
-  size(500, 500);
+  size(1500, 900);
   background(255);
+  start = loadImage("ArkanProjStart2Henry.png");
+  start.resize(width, height);
   //enemies
   cloakers[0] = new Cloaker(width/2, height/2);
   dashers[0] = new Dasher(width/2, height/2);
@@ -38,9 +41,11 @@ void setup() {
 }
 
 void draw() {
-  if (eTimer.isFinished()) {
-    //normals[0](new Normal(width/2, height/2));
+  if (!play) {
+    image(start, 0, 0);
   }
+
+
   background(255);
   cloakers[0].display();
   cloakers[0].move();
