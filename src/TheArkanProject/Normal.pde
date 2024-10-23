@@ -6,6 +6,7 @@ class Normal {
   PImage n1;
   boolean alive, inrange;
 
+
   // Constructor
   Normal(int x, int y) {
     this.x = x;
@@ -16,12 +17,14 @@ class Normal {
     health = 0;
     alive = false;
     speed = 5;
+    n1 = loadImage("Normal1.png");
+    n1.resize(50, 50);
   }
 
   // Member Methods
   void display() {
-    fill(0, 255, 190);
-    rect(x, y, 50, 50);
+    imageMode(CENTER);
+    image(n1,x, y);
   }
 
   void move() {
