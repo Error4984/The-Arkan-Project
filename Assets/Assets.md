@@ -34,8 +34,9 @@
 18. Equilizer (Upgraded Laser rifle)
 19. Base 10mm Auto Cannon
 20. Upgraded 10 mm Auto Cannon
-21. Conduit (SMG)
+21. Sentinal (SMG)
 22. Grenade
+23. Rampage LMG
 
 # Images:
 ![Screenshot 2024-09-25 at 8 03 19 AM](https://github.com/user-attachments/assets/ec3602ea-91d2-46fb-bcca-eb3412a4997f)
