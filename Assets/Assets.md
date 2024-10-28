@@ -1,4 +1,6 @@
 # Assets:
+
+# Weapons: By James Sturm
 1. Kinetic Katana (Radon) expierement 05
 2. Backfire (Boomerang sword)
 3. Throwing Knife
@@ -61,7 +63,7 @@
 
 
 
-
+All assests past this point are sounds by Owen T
 
 # Sounds:
 1. log 064
