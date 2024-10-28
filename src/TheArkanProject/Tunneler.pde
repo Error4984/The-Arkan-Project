@@ -17,13 +17,14 @@ class Tunneler {
     attackdamage = 0;
     attackrate = 0;
     alive = false;
+    tnl1 = loadImage("Heavy.png");
+    tnl1.resize(50, 50);
   }
 
   // Member Methods
   void display() {
-    fill(255, 0, 0);
-    rectMode(CENTER);
-    rect(x, y, 50, 50);
+    imageMode(CENTER);
+    image(tnl1,x, y);
   }
 
   void move() {

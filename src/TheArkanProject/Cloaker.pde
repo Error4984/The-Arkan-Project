@@ -3,7 +3,7 @@
 class Cloaker {
   // Member Variables
   int x, y, w, h, speed, health, m;
-  PImage f1;
+  PImage c1;
   boolean alive;
   //Constructer
   Cloaker(int x, int y) {
@@ -13,12 +13,14 @@ class Cloaker {
     h = 200;
     speed = 5;
     alive = false;
+    c1 = loadImage("OwenTCloaker.png");
+    c1.resize(50, 50);
   }
 
   //Member Methods
   void display() {
-    fill(0);
-    rect(x, y, 50, 50);
+    imageMode(CENTER);
+    image(c1, x, y);
   }
 
   void move() {

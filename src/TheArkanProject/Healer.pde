@@ -3,7 +3,7 @@
 class Healer {
   // Member Variables
   int x, y, w, h, speed, health, healrate, attackrate, attackdamage, m;
-  PImage f1;
+  PImage h1;
   boolean alive;
 
 
@@ -19,12 +19,14 @@ class Healer {
     attackrate = 3;
     attackdamage = 20;
     alive = false;
+    h1 = loadImage("OwenTHealer.png");
+    h1.resize(50, 50);
   }
 
   // Member Methods
   void display() {
-    fill(90, 160, 15);
-    rect(x, y, 50, 50);
+    imageMode(CENTER);
+    image(h1, x, y);
   }
 
 

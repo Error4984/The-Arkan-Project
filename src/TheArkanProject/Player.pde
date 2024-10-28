@@ -3,7 +3,7 @@
 class Player {
   // Member Variables
   int x, y, health, speed, attackSpeed, move;
-  PImage n1;
+  PImage p1;
   boolean alive, inrange;
   char weaponequip;
 
@@ -16,12 +16,14 @@ class Player {
     alive = false;
     this.weaponequip = weaponequip;
     speed = 5;
+    p1 = loadImage("Player2.png");
+    p1.resize(100, 100);
   }
 
   // Member Methods
   void display() {
-    fill(0, 255, 190);
-    rect(x, y, 100, 100);
+    imageMode(CENTER);
+    image(p1,x, y);
   }
 
   void move() {

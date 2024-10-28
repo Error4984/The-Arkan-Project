@@ -2,7 +2,7 @@
 
 class Dasher {  // Member Variables
   int x, y, w, h, speed, health, dashSpeed, attackRate, m;
-  PImage f1;
+  PImage d1;
   boolean alive;
   //Constructer
   Dasher(int x, int y) {
@@ -15,12 +15,14 @@ class Dasher {  // Member Variables
     health = 70;
     speed = 17;
     alive = false;
+    d1 = loadImage("OwenTDasher.png");
+    d1.resize(50, 50);
   }
 
   //Member Methods
   void display() {
-    fill(50, 10, 100);
-    rect(x, y, 50, 50);
+    imageMode(CENTER);
+    image(d1, x, y);
   }
 
   void move() {
