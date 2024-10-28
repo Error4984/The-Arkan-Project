@@ -1,6 +1,8 @@
 
 // The Arkan Project
 //Henry Baldwin
+InfoPanel panel;
+
 
 Cloaker[] cloakers = new Cloaker[1];
 Dasher[] dashers = new Dasher[1];
@@ -20,6 +22,7 @@ Timer eTimer;
 
 
 void setup() {
+  panel = new InfoPanel(100);
   size(1050, 750);
   background(255);
   start = loadImage("ArkanProjStart2Henry.png");
@@ -69,6 +72,7 @@ void draw() {
     players[0].display();
     players[0].move();
   }
+  panel.display();
 }
 
 void keyPressed() {

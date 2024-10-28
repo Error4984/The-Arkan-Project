@@ -9,7 +9,6 @@ class InfoPanel {
   InfoPanel(int initialHealth) {
 
     health = initialHealth;
-    timer = 0;
     ammo = 12;
     brick = 3;
     wood = 5;
@@ -21,10 +20,7 @@ class InfoPanel {
     health += change;
     health = constrain(health, 0, 100); // Health capped at 100
   }
-  // Call this function to update the timer
-  void updateTimer(float deltaTime) {
-    timer += deltaTime;
-  }
+
   // Call this function to update ammo
   void updateAmmo(int ammoChange) {
     ammo += ammoChange;
@@ -63,9 +59,9 @@ class InfoPanel {
     text("Brick:" + brick, 20, 70);
 
     //Display the wood
-    text("Wood:" + wood, 20, 80);
+    text("Wood:" + wood, 20, 90);
 
     //Display the metal
-    text("Metal:" + metal, 20, 80);
+    text("Metal:" + metal, 20, 100);
   }
 }
