@@ -16,12 +16,14 @@ class Spawner {
     health = 0;
     spawnrate = 5;
     alive = false;
+    sp1 = loadImage("Spawner.png");
+    sp1.resize(50, 50);
   }
 
   // Member Methods
   void display() {
-    fill(255, 155, 90);
-    rect(x, y, 50, 50);
+    imageMode(CENTER);
+    image(sp1, x, y);
   }
 
   void move() {
