@@ -1,26 +1,19 @@
 // InfoPanel Class to display game information
 class InfoPanel {
-  int score;
   int health;
   int ammo;
   int wood;
   int metal;
   int brick;
-  float timer;
 
-  InfoPanel(int initialScore, int initialHealth) {
-    score = initialScore;
+  InfoPanel(int initialHealth) {
+
     health = initialHealth;
     timer = 0;
     ammo = 12;
     brick = 3;
     wood = 5;
     metal = 0;
-  }
-
-  // Call this function to update score
-  void updateScore(int points) {
-    score += points;
   }
 
   // Call this function to update health
@@ -60,15 +53,8 @@ class InfoPanel {
     fill(255);
     textSize(12);
 
-    // Display the score
-    text("Score: " + score, 20, 30);
-
     // Display the health
     text("Health: " + health, 20, 50);
-
-
-    // Display the timer
-    text("Time: " + nf(timer, 0, 2), 140, 30); // Formatted to 2 decimal places
 
     //Display the ammo
     text("Ammo:" + ammo, 20, 60);
