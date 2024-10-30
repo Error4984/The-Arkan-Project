@@ -16,7 +16,7 @@ class Player {
     alive = false;
     this.weaponequip = weaponequip;
     speed = 5;
-    p1 = loadImage("Player2.png");
+    p1 = loadImage("HenryPlayer2.png");
     p1.resize(100, 100);
   }
 

@@ -16,7 +16,7 @@ class Spawner {
     health = 0;
     spawnrate = 5;
     alive = false;
-    sp1 = loadImage("Spawner.png");
+    sp1 = loadImage("EliWSpawner.png");
     sp1.resize(50, 50);
   }
 

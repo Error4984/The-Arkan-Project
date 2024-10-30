@@ -17,7 +17,7 @@ class Normal {
     health = 0;
     alive = false;
     speed = 5;
-    n1 = loadImage("Normal1.png");
+    n1 = loadImage("HenryNormal1.png");
     n1.resize(50, 50);
   }
 

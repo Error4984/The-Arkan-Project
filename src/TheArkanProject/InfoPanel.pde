@@ -1,3 +1,4 @@
+// Henry Baldwin
 // InfoPanel Class to display game information
 class InfoPanel {
   int health;

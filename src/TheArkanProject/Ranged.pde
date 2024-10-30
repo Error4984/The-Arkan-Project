@@ -16,7 +16,7 @@ class Ranged {
     health = 0;
     alive = false;
     inrange = false;
-    r1 = loadImage("Ranged.png");
+    r1 = loadImage("JamesRanged.png");
     r1.resize(100, 100);
   }
 

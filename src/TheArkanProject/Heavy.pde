@@ -18,7 +18,7 @@ class Heavy {
     attackrate = 3;
     attackdamage = 50;
     alive = false;
-    h1 = loadImage("Heavy.png");
+    h1 = loadImage("JamesHeavy.png");
     h1.resize(150, 150);
   }
 

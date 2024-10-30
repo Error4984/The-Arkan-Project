@@ -25,7 +25,7 @@ void setup() {
   panel = new InfoPanel(100);
   size(1050, 750);
   background(255);
-  start = loadImage("ArkanProjStart2Henry.png");
+  start = loadImage("HenryArkanProjStart2.png");
   start.resize(width, height);
   //enemies
   cloakers[0] = new Cloaker(width/2, height/2);

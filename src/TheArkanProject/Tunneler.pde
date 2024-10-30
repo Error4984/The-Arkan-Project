@@ -17,7 +17,7 @@ class Tunneler {
     attackdamage = 0;
     attackrate = 0;
     alive = false;
-    tnl1 = loadImage("Tunneler.png");
+    tnl1 = loadImage("EliWTunneler.png");
     tnl1.resize(50, 50);
   }
 
