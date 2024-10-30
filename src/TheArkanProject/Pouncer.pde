@@ -16,12 +16,15 @@ class Pouncer {
     health = 0;
     alive = false;
     inrange = false;
+    p1 = loadImage("OwenTPouncer.png");
+    p1.resize(50, 50);
   }
 
   // Member Methods
   void display() {
-    fill(0, 255, 0);
-    rect(x, y, 50, 50);
+
+    imageMode(CENTER);
+    image(p1, x, y);
   }
 
   void move() {
