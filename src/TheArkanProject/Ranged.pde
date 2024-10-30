@@ -16,12 +16,15 @@ class Ranged {
     health = 0;
     alive = false;
     inrange = false;
+    r1 = loadImage("Ranged.png");
+    r1.resize(100, 100);
   }
+
 
   // Member Methods
   void display() {
-    fill(155, 15, 95);
-    rect(x, y, 50, 50);
+    imageMode(CENTER);
+    image(r1, x, y);
   }
 
   void move() {
