@@ -1,4 +1,4 @@
-// Henry Baldwin
+// James sturm
 
 class Ranged {
   // Member Variables
