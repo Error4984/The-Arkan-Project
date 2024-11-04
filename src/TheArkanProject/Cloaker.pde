@@ -2,16 +2,18 @@
 
 class Cloaker {
   // Member Variables
-  int x, y, w, h, speed, health, m;
+  int x, y, w, h, health, m;
   PImage c1;
   boolean alive;
+  float speed;
+
   //Constructer
   Cloaker(int x, int y) {
-    this.x = x;
-    this.y = y;
+    x = random(width);
+    y = -r*4
     w = 100;
     h = 200;
-    speed = 5;
+    speed = (5);
     alive = false;
     c1 = loadImage("OwenTCloaker.png");
     c1.resize(50, 50);
@@ -24,18 +26,14 @@ class Cloaker {
   }
 
   void move() {
-    int m = int(random(0, 4));
-    if (m == 0) {
-      x = x+speed;
-    }
-    if (m == 1) {
-      x = x-speed;
-    }
-    if (m == 2) {
-      y = y+speed;
-    }
-    if (m == 3) {
-      y = y-speed;
-    }
+y+= speed;
   }
+
+boolean defeated() {
+if (y > height + r4) {
+return true;
+
+} else { return false;
+
+}
 }
