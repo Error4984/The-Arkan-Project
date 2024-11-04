@@ -2,6 +2,7 @@
 // The Arkan Project
 //Henry Baldwin
 InfoPanel panel;
+Timer t1
 
 
 Cloaker[] cloakers = new Cloaker[1];
@@ -51,8 +52,7 @@ void draw() {
 
 
     background(255);
-    cloakers[0].display();
-    cloakers[0].move();
+
     dashers[0].display();
     dashers[0].move();
     healers[0].display();
@@ -71,6 +71,14 @@ void draw() {
     tunnelers[0].move();
     players[0].display();
     players[0].move();
+  }
+ for (int i = 0; i < enemies.size(); i++) {
+    Cloaker cloaker = cloakers.get(i);
+    cloakers[0].display();
+    cloakers[0].move();
+    if (cloaker.reachedBottom()) {
+      cloakers.remove(i);
+    }
   }
   panel.display();
 }
