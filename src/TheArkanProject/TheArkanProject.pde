@@ -3,6 +3,7 @@
 //Henry Baldwin
 InfoPanel panel;
 Timer t1;
+
 ArrayList<Cloaker> cloakers = new ArrayList<Cloaker>();
 ArrayList<Dasher> dashers = new ArrayList<Dasher>();
 ArrayList<Healer> healers = new ArrayList<Healer>();
