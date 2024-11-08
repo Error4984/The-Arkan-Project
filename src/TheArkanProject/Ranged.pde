@@ -7,9 +7,9 @@ class Ranged {
   boolean alive, inrange;
 
   // Constructor
-  Ranged(int x, int y) {
-    this.x = x;
-    this.y = y;
+  Ranged() {
+    x = int(random(width));
+    y = -100;
     w = 0;
     h = 0;
     speed = 5;
@@ -28,21 +28,14 @@ class Ranged {
   }
 
   void move() {
-    int m = int(random(0, 4));
-    if (m == 0) {
-      x = x+speed;
-    }
-    if (m == 1) {
-      x = x-speed;
-    }
-    if (m == 2) {
-      y = y+speed;
-    }
-    if (m == 3) {
-      y = y-speed;
-    }
+    y+=speed;
   }
 
-  void projfire() {
+  boolean reachedBottom() {
+    if (y > height) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

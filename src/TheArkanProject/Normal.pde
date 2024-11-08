@@ -8,9 +8,9 @@ class Normal {
 
 
   // Constructor
-  Normal(int x, int y) {
-    this.x = x;
-    this.y = y;
+  Normal() {
+    x = int(random(width));
+    y = -100;
     w = 0;
     h = 0;
     speed = 0;
@@ -24,25 +24,18 @@ class Normal {
   // Member Methods
   void display() {
     imageMode(CENTER);
-    image(n1,x, y);
+    image(n1, x, y);
   }
 
   void move() {
-    int m = int(random(0, 4));
-    if (m == 0) {
-      x = x+speed;
-    }
-    if (m == 1) {
-      x = x-speed;
-    }
-    if (m == 2) {
-      y = y+speed;
-    }
-    if (m == 3) {
-      y = y-speed;
-    }
+    y+=speed;
   }
 
-  void attack() {
+  boolean reachedBottom() {
+    if (y > height) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }

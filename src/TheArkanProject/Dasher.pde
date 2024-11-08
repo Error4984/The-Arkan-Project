@@ -5,9 +5,9 @@ class Dasher {  // Member Variables
   PImage d1;
   boolean alive;
   //Constructer
-  Dasher(int x, int y) {
-    this.x = x;
-    this.y = y;
+  Dasher() {
+    x = int(random(width));
+    y = -100;
     w = 100;
     h = 200;
     attackRate = 10;
@@ -26,18 +26,14 @@ class Dasher {  // Member Variables
   }
 
   void move() {
-    int m = int(random(0, 4));
-    if (m == 0) {
-      x = x+speed;
-    }
-    if (m == 1) {
-      x = x-speed;
-    }
-    if (m == 2) {
-      y = y+speed;
-    }
-    if (m == 3) {
-      y = y-speed;
+    y+=speed;
+  }
+
+  boolean reachedBottom() {
+    if (y > height) {
+      return true;
+    } else {
+      return false;
     }
   }
 }

@@ -8,9 +8,9 @@ class Healer {
 
 
   // Constructor
-  Healer(int x, int y) {
-    this.x = x;
-    this.y = y;
+  Healer() {
+    x = int(random(width));
+    y = -100;
     w = 50;
     h = 50;
     speed = 3;
@@ -31,18 +31,13 @@ class Healer {
 
 
   void move() {
-    int m = int(random(0, 4));
-    if (m == 0) {
-      x = x+speed;
-    }
-    if (m == 1) {
-      x = x-speed;
-    }
-    if (m == 2) {
-      y = y+speed;
-    }
-    if (m == 3) {
-      y = y-speed;
+    y+=speed;
+  }
+  boolean reachedBottom() {
+    if (y > height) {
+      return true;
+    } else {
+      return false;
     }
   }
 }
