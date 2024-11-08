@@ -14,6 +14,7 @@ ArrayList<Ranged> rangeds = new ArrayList<Ranged>();
 ArrayList<Spawner> spawners = new ArrayList<Spawner>();
 ArrayList<Tunneler> tunnelers = new ArrayList<Tunneler>();
 
+Button[] buttons=new Button[4];
 Player[] players= new Player[1];
 boolean play = false;
 PImage start;
@@ -27,8 +28,8 @@ void setup() {
   background(255);
   start = loadImage("HenryArkanProjStart2.png");
   start.resize(width, height);
-  //enemies
-
+  //start buttons
+  buttons[0] =new Button(250, 500, "hi", 50, 50, false);
   //player
   players[0] = new Player(0, 60, 'w');
   //timer
@@ -38,7 +39,11 @@ void setup() {
 
 void draw() {
   if (!play) {
-    image(start, 0, 0);
+    buttons[0].display();
+
+
+    imageMode(CENTER);
+    image(start, width/2, height/2);
   } else {
     background(255);
 
