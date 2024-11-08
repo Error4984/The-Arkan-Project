@@ -9,8 +9,8 @@ class Cloaker {
 
   //Constructer
   Cloaker(int x, int y) {
-    x = random(width);
-    y = -r*4
+    x = int(random(width));
+    y = height+5;
     w = 100;
     h = 200;
     speed = (5);
@@ -26,14 +26,14 @@ class Cloaker {
   }
 
   void move() {
-y+= speed;
+    y+= speed;
   }
 
-boolean defeated() {
-if (y > height + r4) {
-return true;
-
-} else { return false;
-
-}
+  boolean defeated() {
+    if (y > height + r4) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

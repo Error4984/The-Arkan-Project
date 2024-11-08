@@ -2,20 +2,14 @@
 // The Arkan Project
 //Henry Baldwin
 InfoPanel panel;
-Timer t1
+Timer t1;
 
 
-Cloaker[] cloakers = new Cloaker[1];
-Dasher[] dashers = new Dasher[1];
-Healer[] healers = new Healer[1];
-Heavy[] heavys = new Heavy[1];
-Normal[] normals = new Normal[1];
-Pouncer[] pouncers = new Pouncer[1];
-Ranged[] rangeds = new Ranged[1];
-Spawner[] spawners = new Spawner[1];
-Tunneler[] tunnelers = new Tunneler[1];
 
-Player[] players= new Player[1];
+
+
+
+ Player[] players= new Player[1];
 boolean play = false;
 PImage start;
 Timer eTimer;
@@ -29,15 +23,7 @@ void setup() {
   start = loadImage("HenryArkanProjStart2.png");
   start.resize(width, height);
   //enemies
-  cloakers[0] = new Cloaker(width/2, height/2);
-  dashers[0] = new Dasher(width/2, height/2);
-  healers[0] = new Healer(width/2, height/2);
-  heavys[0] = new Heavy(width/2, height/2);
-  normals[0] = new Normal(width/2, height/2);
-  pouncers[0] = new Pouncer(width/2, height/2);
-  rangeds[0] = new Ranged(width/2, height/2);
-  spawners[0] = new Spawner(width/2, height/2);
-  tunnelers[0] = new Tunneler(width/2, height/2);
+
   //player
   players[0] = new Player(0, 60, 'w');
   //timer
@@ -53,26 +39,14 @@ void draw() {
 
     background(255);
 
-    dashers[0].display();
-    dashers[0].move();
-    healers[0].display();
-    healers[0].move();
-    heavys[0].display();
-    heavys[0].move();
-    normals[0].display();
-    normals[0].move();
-    pouncers[0].display();
-    pouncers[0].move();
-    rangeds[0].display();
-    rangeds[0].move();
-    spawners[0].display();
-    spawners[0].move();
-    tunnelers[0].display();
-    tunnelers[0].move();
+
+
+
+
     players[0].display();
     players[0].move();
   }
- for (int i = 0; i < enemies.size(); i++) {
+  for (int i = 0; i < enemies.size(); i++) {
     Cloaker cloaker = cloakers.get(i);
     cloakers[0].display();
     cloakers[0].move();
@@ -80,15 +54,78 @@ void draw() {
       cloakers.remove(i);
     }
   }
-  panel.display();
+  for (int i = 0; i < enemies.size(); i++) {
+    Dasher dasher = dashers.get(i);
+    dashers[0].display();
+    dashers[0].move();
+    if (dasher.reachedBottom()) {
+      dashers.remove(i);
+    }
+  }
+  for (int i = 0; i < enemies.size(); i++) {
+    Healer healer = healers.get(i);
+    healers[0].display();
+    healers[0].move();
+    if (healer.reachedBottom()) {
+      healers.remove(i);
+    }
+  }
+  for (int i = 0; i < enemies.size(); i++) {
+    Heavy heavy = heavys.get(i);
+    heavys[0].display();
+    heavys[0].move();
+    if (heavy.reachedBottom()) {
+      heavys.remove(i);
+    }
+  }
+  for (int i = 0; i < enemies.size(); i++) {
+    Normal normal = normals.get(i);
+    normals[0].display();
+    normals[0].move();
+    if (normal.reachedBottom()) {
+      normals.remove(i);
+    }
+  }
+  for (int i = 0; i < enemies.size(); i++) {
+    Pouncer pouncer = pouncers.get(i);
+    pouncers[0].display();
+    pouncers[0].move();
+    if (pouncer.reachedBottom()) {
+      pouncers.remove(i);
+    }
+  }
+  for (int i = 0; i < enemies.size(); i++) {
+    Ranged ranged = rangeds.get(i);
+    rangeds[0].display();
+    rangeds[0].move();
+    if (ranged.reachedBottom()) {
+      rangeds.remove(i);
+    }
+  }
+  for (int i = 0; i < enemies.size(); i++) {
+    Spawner spawner = spawners.get(i);
+    spawners[0].display();
+    spawners[0].move();
+    if (spawner.reachedBottom()) {
+      spawners.remove(i);
+    }
+  }
+  for (int i = 0; i < enemies.size(); i++) {
+    Tunneler tunneler = tunnelers.get(i);
+    tunnelers[0].display();
+    tunnelers[0].move();
+    if (tuneler.reachedBottom()) {
+      tunnelers.remove(i);
+    }
+    panel.display();
+  }
 }
+  void keyPressed() {
+  }
 
-void keyPressed() {
-}
+  void start() {
+  }
 
-void start() {
-}
-
-void mousePressed() {
-  play = true;
-}
+  void mousePressed() {
+    play = true;
+  }
