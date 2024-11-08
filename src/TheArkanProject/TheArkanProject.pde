@@ -1,4 +1,3 @@
-
 // The Arkan Project
 //Henry Baldwin
 InfoPanel panel;
@@ -29,7 +28,7 @@ void setup() {
   start = loadImage("HenryArkanProjStart2.png");
   start.resize(width, height);
   //start buttons
-  buttons[0] =new Button(250, 500, "hi", 50, 50, false);
+  buttons[0] =new Button(width/6, 350, "START",160, 70);
   //player
   players[0] = new Player(0, 60, 'w');
   //timer
@@ -39,11 +38,11 @@ void setup() {
 
 void draw() {
   if (!play) {
-    buttons[0].display();
-
-
+    
     imageMode(CENTER);
     image(start, width/2, height/2);
+    buttons[0].display();
+    buttons[0].hover(mouseX,mouseY);
   } else {
     background(255);
 

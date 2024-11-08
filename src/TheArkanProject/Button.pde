@@ -3,10 +3,10 @@ class Button {
   int x, y, w, h;
   color c1, c2;
   String val;
-  boolean on, isNum;
+  boolean on;
 
   // Constructor
-  Button(int x, int y, String val, int w, int h, boolean isNum) {
+  Button(int x, int y, String val, int w, int h) {
     this.x = x;
     this.y = y;
     c1 = color(#7989DE);
@@ -16,7 +16,6 @@ class Button {
     this.h = h;
     on=false;
     imageMode(CENTER);
-    this.isNum = isNum;
   }
 
   // Member methods
