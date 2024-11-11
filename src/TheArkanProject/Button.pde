@@ -9,8 +9,8 @@ class Button {
   Button(int x, int y, String val, int w, int h) {
     this.x = x;
     this.y = y;
-    c1 = color(#7989DE);
-    c2 = color(#3B436F);
+    c1 = color(#7ACB52);
+    c2 = color(#4A7C32);
     this.val = val;
     this.w = w;
     this.h = h;

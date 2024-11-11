@@ -25,10 +25,11 @@ void setup() {
   panel = new InfoPanel();
   size(1050, 750);
   background(255);
-  start = loadImage("HenryArkanProjStart2.png");
+  start = loadImage("HenryStartArkan2.png");
   start.resize(width, height);
-  //start buttons
+  // buttons on start screen
   buttons[0] =new Button(width/6, 350, "START", 160, 70);
+  buttons[1] =new Button(5*width/6, 350, "OPTIONS", 160, 70);
   //player
   player = new Player(0, 60, 'w');
   //timer
@@ -43,6 +44,8 @@ void draw() {
     image(start, width/2, height/2);
     buttons[0].display();
     buttons[0].hover(mouseX, mouseY);
+    buttons[1].display();
+    buttons[1].hover(mouseX, mouseY);
   } else {
     background(255);
 
@@ -142,12 +145,12 @@ void draw() {
   }
 }
 
-void keyPressed() {
-}
-
-void start() {
-}
-
 void mousePressed() {
-  play = true;
+  if (play == false)
+    for (int i=0; i<buttons.length; i++) {
+      if (buttons[0].on)
+        play = true;
+    } else {
+    play = false;
+  }
 }
