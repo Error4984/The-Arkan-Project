@@ -14,7 +14,7 @@ ArrayList<Spawner> spawners = new ArrayList<Spawner>();
 ArrayList<Tunneler> tunnelers = new ArrayList<Tunneler>();
 
 Button[] buttons=new Button[4];
-Player[] players= new Player[1];
+Player player;
 boolean play = false;
 PImage start;
 Timer eTimer;
@@ -22,15 +22,15 @@ Timer eTimer;
 
 
 void setup() {
-  panel = new InfoPanel(100);
+  panel = new InfoPanel();
   size(1050, 750);
   background(255);
   start = loadImage("HenryArkanProjStart2.png");
   start.resize(width, height);
   //start buttons
-  buttons[0] =new Button(width/6, 350, "START",160, 70);
+  buttons[0] =new Button(width/6, 350, "START", 160, 70);
   //player
-  players[0] = new Player(0, 60, 'w');
+  player = new Player(0, 60, 'w');
   //timer
   eTimer = new Timer(1000);
   eTimer.start();
@@ -38,16 +38,16 @@ void setup() {
 
 void draw() {
   if (!play) {
-    
+
     imageMode(CENTER);
     image(start, width/2, height/2);
     buttons[0].display();
-    buttons[0].hover(mouseX,mouseY);
+    buttons[0].hover(mouseX, mouseY);
   } else {
     background(255);
 
-    players[0].display();
-    players[0].move();
+    player.display();
+    player.move();
 
     if (eTimer.isFinished()) {
       cloakers.add(new Cloaker());
@@ -64,10 +64,14 @@ void draw() {
     }
     for (int i = 0; i < cloakers.size(); i++) {
       Cloaker cloaker = cloakers.get(i);
-      cloaker.display();
-      cloaker.move();
+      if (player.intersect(cloaker)) {
+        player.health=-10;
+      }
       if (cloaker.reachedBottom()) {
         cloakers.remove(i);
+      } else {
+        cloaker.display();
+        cloaker.move();
       }
     }
     for (int i = 0; i < dashers.size(); i++) {

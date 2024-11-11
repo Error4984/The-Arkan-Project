@@ -12,7 +12,7 @@ class Player {
     this.x = x;
     this.y = y;
     attackSpeed = 0;
-    health = 0;
+    health = 100;
     alive = false;
     this.weaponequip = weaponequip;
     speed = 5;
@@ -23,7 +23,7 @@ class Player {
   // Member Methods
   void display() {
     imageMode(CENTER);
-    image(p1,x, y);
+    image(p1, x, y);
   }
 
   void move() {
@@ -40,5 +40,15 @@ class Player {
     }
     //void attack() {
     //}
+  }
+
+  boolean intersect(Cloaker c) {
+    float d = dist(x, y, c.x, c.y);
+    if (d<40) { // refine the collision detection
+    health =- 1;
+      return true;
+    } else {
+      return false;
+    }
   }
 }

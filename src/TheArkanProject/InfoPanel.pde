@@ -8,9 +8,9 @@ class InfoPanel {
   int brick;
   int damage;
 
-  InfoPanel(int initialHealth) {
+  InfoPanel() {
 
-    health = initialHealth;
+    health = 100;
     ammo = 12;
     brick = 3;
     wood = 5;
@@ -39,7 +39,7 @@ class InfoPanel {
   void updateBrick(int brickChange) {
     brick += brickChange;
   }
-// Call this function to update damage
+  // Call this function to update damage
   void updateDamage(int damageChange) {
     damage += damageChange;
   }
