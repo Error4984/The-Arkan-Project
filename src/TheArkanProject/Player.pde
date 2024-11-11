@@ -1,4 +1,4 @@
-// Henry Baldwin
+// Henry Baldwin and Owen Thibodeaux
 
 class Player {
   // Member Variables
@@ -44,8 +44,71 @@ class Player {
 
   boolean intersect(Cloaker c) {
     float d = dist(x, y, c.x, c.y);
-    if (d<40) { // refine the collision detection
-    health =- 1;
+    if (d<30) { // refine the collision detection
+    health =- 10;
+      return true;
+    } else {
+      return false;
+    }
+  }
+   boolean intersect(Dasher c) {
+    float d = dist(x, y, c.x, c.y);
+    if (d<30) { // refine the collision detection
+    health =- 10;
+      return true;
+    } else {
+      return false;
+    }
+  }
+   boolean intersect(Healer c) {
+    float d = dist(x, y, c.x, c.y);
+    if (d<30) { // refine the collision detection
+    health =- 10;
+      return true;
+    } else {
+      return false;
+    }
+  }
+   boolean intersect(Normal c) {
+    float d = dist(x, y, c.x, c.y);
+    if (d<30) { // refine the collision detection
+    health =- 10;
+      return true;
+    } else {
+      return false;
+    }
+  }
+   boolean intersect(Pouncer c) {
+    float d = dist(x, y, c.x, c.y);
+    if (d<30) { // refine the collision detection
+    health =- 10;
+      return true;
+    } else {
+      return false;
+    }
+  }
+   boolean intersect(Ranged c) {
+    float d = dist(x, y, c.x, c.y);
+    if (d<30) { // refine the collision detection
+    health =- 10;
+      return true;
+    } else {
+      return false;
+    }
+  }
+   boolean intersect(Spawner c) {
+    float d = dist(x, y, c.x, c.y);
+    if (d<30) { // refine the collision detection
+    health =- 10;
+      return true;
+    } else {
+      return false;
+    }
+  }
+   boolean intersect(Tunneler c) {
+    float d = dist(x, y, c.x, c.y);
+    if (d<30) { // refine the collision detection
+    health =- 10;
       return true;
     } else {
       return false;
