@@ -38,14 +38,24 @@ class Player {
         x = x+speed;
       }
     }
-    //void attack() {
-    //}
+  }
+
+  //void attack() {
+  //}
+
+
+  boolean dead() {
+    if (health<=0) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
   boolean intersect(Cloaker c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-      
+
       return true;
     } else {
       return false;
@@ -54,7 +64,7 @@ class Player {
   boolean intersect(Dasher c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-      
+
       return true;
     } else {
       return false;
@@ -63,7 +73,7 @@ class Player {
   boolean intersect(Healer c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-      
+
       return true;
     } else {
       return false;
@@ -72,7 +82,7 @@ class Player {
   boolean intersect(Heavy c) {
     float d = dist(x, y, c.x, c.y);
     if (d<90) { // refine the collision detection
-      
+
       return true;
     } else {
       return false;
@@ -81,7 +91,7 @@ class Player {
   boolean intersect(Normal c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-      
+
       return true;
     } else {
       return false;
@@ -90,7 +100,7 @@ class Player {
   boolean intersect(Pouncer c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-      
+
       return true;
     } else {
       return false;
@@ -99,7 +109,7 @@ class Player {
   boolean intersect(Ranged c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-      
+
       return true;
     } else {
       return false;
@@ -108,7 +118,7 @@ class Player {
   boolean intersect(Spawner c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-      
+
       return true;
     } else {
       return false;
@@ -117,7 +127,7 @@ class Player {
   boolean intersect(Tunneler c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-      
+
       return true;
     } else {
       return false;

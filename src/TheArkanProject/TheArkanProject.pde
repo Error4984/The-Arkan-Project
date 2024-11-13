@@ -175,6 +175,9 @@ void draw() {
         tunneler.move();
       }
     }
+    if (p1.dead()) {
+      gameOver();
+    }
     panel.display();
   }
 }
@@ -187,4 +190,13 @@ void mousePressed() {
     } else {
     play = false;
   }
+}
+
+void gameOver () {
+  background (0);
+  textAlign(CENTER);
+  textSize(40);
+  fill(40, 80, 200);
+  text("Game Over!", width/2, height/2);
+  noLoop();
 }
