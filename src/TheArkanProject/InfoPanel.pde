@@ -1,7 +1,6 @@
 // Henry Baldwin
 // InfoPanel Class to display game information
 class InfoPanel {
-  int health;
   int ammo;
   int wood;
   int metal;
@@ -10,18 +9,13 @@ class InfoPanel {
 
   InfoPanel() {
 
-    health = 100;
     ammo = 12;
     brick = 3;
     wood = 5;
     metal = 0;
   }
 
-  // Call this function to update health
-  void updateHealth(int change) {
-    health += change;
-    health = constrain(health, 0, 100); // Health capped at 100
-  }
+
 
   // Call this function to update ammo
   void updateAmmo(int ammoChange) {
@@ -55,7 +49,7 @@ class InfoPanel {
     textSize(12);
 
     // Display the health
-    text("Health: " + health, 20, 50);
+    text("Health: " + p1.health, 20, 50);
 
     //Display the ammo
     text("Ammo:" + ammo, 20, 60);

@@ -2,7 +2,7 @@
 
 class Healer {
   // Member Variables
-  int x, y, w, h, speed, health, healrate, attackrate, attackdamage, m;
+  int x, y, w, h, speed, health, healrate, attackrate, attackdamage;
   PImage h1;
   boolean alive;
 

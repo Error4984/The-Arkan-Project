@@ -45,70 +45,79 @@ class Player {
   boolean intersect(Cloaker c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-    health =- 10;
+      
       return true;
     } else {
       return false;
     }
   }
-   boolean intersect(Dasher c) {
+  boolean intersect(Dasher c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-    health =- 10;
+      
       return true;
     } else {
       return false;
     }
   }
-   boolean intersect(Healer c) {
+  boolean intersect(Healer c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-    health =- 10;
+      
       return true;
     } else {
       return false;
     }
   }
-   boolean intersect(Normal c) {
+  boolean intersect(Heavy c) {
     float d = dist(x, y, c.x, c.y);
-    if (d<30) { // refine the collision detection
-    health =- 10;
+    if (d<90) { // refine the collision detection
+      
       return true;
     } else {
       return false;
     }
   }
-   boolean intersect(Pouncer c) {
+  boolean intersect(Normal c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-    health =- 10;
+      
       return true;
     } else {
       return false;
     }
   }
-   boolean intersect(Ranged c) {
+  boolean intersect(Pouncer c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-    health =- 10;
+      
       return true;
     } else {
       return false;
     }
   }
-   boolean intersect(Spawner c) {
+  boolean intersect(Ranged c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-    health =- 10;
+      
       return true;
     } else {
       return false;
     }
   }
-   boolean intersect(Tunneler c) {
+  boolean intersect(Spawner c) {
     float d = dist(x, y, c.x, c.y);
     if (d<30) { // refine the collision detection
-    health =- 10;
+      
+      return true;
+    } else {
+      return false;
+    }
+  }
+  boolean intersect(Tunneler c) {
+    float d = dist(x, y, c.x, c.y);
+    if (d<30) { // refine the collision detection
+      
       return true;
     } else {
       return false;

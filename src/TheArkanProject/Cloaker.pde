@@ -39,12 +39,4 @@ class Cloaker {
       return false;
     }
   }
-boolean intersect(Cloaker r) {
-    float d = dist(x, y, r.x, r.y);
-    if (d<30) { // refine the collision detection
-      return true;
-    } else {
-      return false;
-    }
-  }
 }
