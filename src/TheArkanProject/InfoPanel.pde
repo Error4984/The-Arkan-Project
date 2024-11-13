@@ -49,18 +49,18 @@ class InfoPanel {
     textSize(12);
 
     // Display the health
-    text("Health: " + p1.health, 20, 50);
+    text("Health: " + p1.health, 20, 10);
 
     //Display the ammo
-    text("Ammo:" + ammo, 20, 60);
+    text("Ammo:" + ammo, 20, 20);
 
     //Display the brick
-    text("Brick:" + brick, 20, 70);
+    text("Brick:" + brick, 20, 30);
 
     //Display the wood
-    text("Wood:" + wood, 20, 90);
+    text("Wood:" + wood, 20, 40);
 
     //Display the metal
-    text("Metal:" + metal, 20, 100);
+    text("Metal:" + metal, 20, 50);
   }
 }
