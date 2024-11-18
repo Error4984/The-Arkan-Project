@@ -69,6 +69,7 @@ void draw() {
       Cloaker cloaker = cloakers.get(i);
       if (p1.intersect(cloaker)) {
         p1.health-=10;
+        cloakers.remove(i);
       }
       if (cloaker.reachedBottom()) {
         cloakers.remove(i);
@@ -81,6 +82,7 @@ void draw() {
       Dasher dasher = dashers.get(i);
       if (p1.intersect(dasher)) {
         p1.health-=10;
+        dashers.remove(i);
       }
       if (dasher.reachedBottom()) {
         dashers.remove(i);
@@ -94,6 +96,7 @@ void draw() {
       Healer healer = healers.get(i);
       if (p1.intersect(healer)) {
         p1.health-=10;
+        healers.remove(i);
       }
       if (healer.reachedBottom()) {
         healers.remove(i);
@@ -107,6 +110,7 @@ void draw() {
       Heavy heavy = heavys.get(i);
       if (p1.intersect(heavy)) {
         p1.health-=10;
+        heavys.remove(i);
       }
       if (heavy.reachedBottom()) {
         heavys.remove(i);
@@ -119,6 +123,7 @@ void draw() {
       Normal normal = normals.get(i);
       if (p1.intersect(normal)) {
         p1.health-=10;
+        normals.remove(i);
       }
       if (normal.reachedBottom()) {
         normals.remove(i);
@@ -131,6 +136,7 @@ void draw() {
       Pouncer pouncer = pouncers.get(i);
       if (p1.intersect(pouncer)) {
         p1.health-=10;
+        pouncers.remove(i);
       }
       if (pouncer.reachedBottom()) {
         pouncers.remove(i);
@@ -143,6 +149,7 @@ void draw() {
       Ranged ranged = rangeds.get(i);
       if (p1.intersect(ranged)) {
         p1.health-=10;
+        rangeds.remove(i);
       }
       if (ranged.reachedBottom()) {
         rangeds.remove(i);
@@ -155,6 +162,7 @@ void draw() {
       Spawner spawner = spawners.get(i);
       if (p1.intersect(spawner)) {
         p1.health-=10;
+        spawners.remove(i);
       }
       if (spawner.reachedBottom()) {
         spawners.remove(i);
@@ -167,6 +175,7 @@ void draw() {
       Tunneler tunneler = tunnelers.get(i);
       if (p1.intersect(tunneler)) {
         p1.health-=10;
+        tunnelers.remove(i);
       }
       if (tunneler.reachedBottom()) {
         tunnelers.remove(i);
