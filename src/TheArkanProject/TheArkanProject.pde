@@ -13,10 +13,10 @@ ArrayList<Ranged> rangeds = new ArrayList<Ranged>();
 ArrayList<Spawner> spawners = new ArrayList<Spawner>();
 ArrayList<Tunneler> tunnelers = new ArrayList<Tunneler>();
 
-Button[] buttons=new Button[4];
+Button[] buttons=new Button[5];
 Player p1;
 boolean play = false;
-PImage start;
+PImage start, over;
 Timer eTimer;
 
 
@@ -26,10 +26,13 @@ void setup() {
   size(1050, 750);
   background(255);
   start = loadImage("HenryStartArkan2.png");
+  over = loadImage("HenryArkanGameOver3.png");
   start.resize(width, height);
+  over.resize(width, height);
   // buttons on start screen
-  buttons[0] =new Button(width/6, 350, "START", 160, 70);
-  buttons[1] =new Button(5*width/6, 350, "OPTIONS", 160, 70);
+  buttons[0] =new Button(width/6, 350, "START", 160, 70, #7ACB52, #4A7C32);
+  buttons[1] =new Button(5*width/6, 350, "OPTIONS", 160, 70, #7ACB52, #4A7C32);
+  buttons[2] =new Button(width/2, 350, "MENU", 160, 70, #D14E4E, #903434);
   //player
   p1 = new Player(0, 60, 'w');
   //timer
@@ -192,20 +195,17 @@ void draw() {
 }
 
 void mousePressed() {
-  if (play == false)
+  if (play == false && !p1.dead())
     for (int i=0; i<buttons.length; i++) {
-      if (buttons[0].on)
+      if (buttons[0].on) {
         play = true;
-    } else {
-    play = false;
-  }
+      } else
+      play = false;
+    }
 }
 
 void gameOver () {
-  background (0);
-  textAlign(CENTER);
-  textSize(40);
-  fill(40, 80, 200);
-  text("Game Over!", width/2, height/2);
-  noLoop();
+  image(over, width/2, height/2);
+  buttons[2].display();
+  buttons[2].hover(mouseX, mouseY);
 }

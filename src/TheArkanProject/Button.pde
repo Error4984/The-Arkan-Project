@@ -6,11 +6,13 @@ class Button {
   boolean on;
 
   // Constructor
-  Button(int x, int y, String val, int w, int h) {
+  Button(int x, int y, String val, int w, int h, int c1, int c2) {
     this.x = x;
     this.y = y;
-    c1 = color(#7ACB52);
-    c2 = color(#4A7C32);
+    this.c1=c1;
+    this.c2=c2;
+    //c1 = color(#7ACB52);
+    //c2 = color(#4A7C32);
     this.val = val;
     this.w = w;
     this.h = h;
