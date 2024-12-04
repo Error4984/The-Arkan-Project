@@ -2,10 +2,11 @@
 ![Arkan1](https://github.com/user-attachments/assets/be16111e-6b96-4f79-9e8c-4a0fb5d4ee9b)
 
 # Team Members and Roles
-* Eli: Lead Developer and Game Designer
-* Henry: Animation/Sound Design
+* Eli: Narrative Design, Sound Design
+* Henry: Animation/Composer
 * James: Modeler, Map and Character Design
-* Owen: Main: Sound Design/Sub: Lore and Map Design
+* Owen: Quality Assurance/Tester
+* Scotty-Doo: Lead Developer
 
 # Overview of Game 1
 The game focuses on being a scary survival game that incorporates engaging story and the horror aspect by adding sounds that give of a spooky vibe. For instance adding the click of an emeny without much background noise can make the player stressed or scared. The game also focuses on being a survival rpg game where you need to get home after a devastating helicopter crash.
