@@ -1,8 +1,6 @@
 // The Arkan Project
 //Henry Baldwin
 InfoPanel panel;
-Timer t1;
-
 ArrayList<Cloaker> cloakers = new ArrayList<Cloaker>();
 ArrayList<Dasher> dashers = new ArrayList<Dasher>();
 ArrayList<Healer> healers = new ArrayList<Healer>();
@@ -12,19 +10,19 @@ ArrayList<Pouncer> pouncers = new ArrayList<Pouncer>();
 ArrayList<Ranged> rangeds = new ArrayList<Ranged>();
 ArrayList<Spawner> spawners = new ArrayList<Spawner>();
 ArrayList<Tunneler> tunnelers = new ArrayList<Tunneler>();
-
 Button[] buttons=new Button[5];
+
 Player p1;
 boolean play = false;
 PImage start, over;
-Timer eTimer;
-
+Timer eTimer, wTimer;
+int welcomeCounter;
 
 
 void setup() {
   panel = new InfoPanel();
   size(1050, 750);
-  background(255);
+  background(0);
   start = loadImage("HenryStartArkan2.png");
   over = loadImage("HenryArkanGameOver3.png");
   start.resize(width, height);
@@ -35,20 +33,18 @@ void setup() {
   buttons[2] =new Button(width/2, 350, "MENU", 160, 70, #D14E4E, #903434);
   //player
   p1 = new Player(0, 60, 'w');
-  //timer
+  //spawn timer
   eTimer = new Timer(1000);
   eTimer.start();
+  //welcome timer
+  wTimer = new Timer(5000);
+  wTimer.start();
+  welcomeCounter=0;
 }
 
 void draw() {
   if (!play) {
-
-    imageMode(CENTER);
-    image(start, width/2, height/2);
-    buttons[0].display();
-    buttons[0].hover(mouseX, mouseY);
-    buttons[1].display();
-    buttons[1].hover(mouseX, mouseY);
+    startScreen();
   } else {
     background(255);
 
@@ -195,17 +191,59 @@ void draw() {
 }
 
 void mousePressed() {
-  if (play == false && !p1.dead())
+  if (play == false && !p1.dead() && welcomeCounter>2) {
     for (int i=0; i<buttons.length; i++) {
       if (buttons[0].on) {
         play = true;
-      } else
-      play = false;
+      } else {
+        play = false;
+      }
     }
+  }
+  if (play == false && !p1.dead() && welcomeCounter<2) {
+    welcomeCounter=1000;
+    startMenu();
+  }
 }
 
 void gameOver () {
   image(over, width/2, height/2);
   buttons[2].display();
   buttons[2].hover(mouseX, mouseY);
+}
+
+void startScreen () {
+  if (wTimer.isFinished()) {
+    wTimer.start();
+    welcomeCounter++;
+    textAlign(CENTER);
+    textSize(50);
+    switch(welcomeCounter) {
+    case 1:
+      background(0);
+      fill(255);
+      text("You are about to experience...", width/2, height/4*3);
+      break;
+    case 2:
+      background(0);
+      fill(255);
+      text("the worst game ever made.", width/2, height/4*3);
+      break;
+    default:
+      startMenu();
+      println("None");
+      break;
+    }
+  }
+  if (welcomeCounter>2) {
+    buttons[0].display();
+    buttons[0].hover(mouseX, mouseY);
+    buttons[1].display();
+    buttons[1].hover(mouseX, mouseY);
+  }
+}
+
+void startMenu() {
+  imageMode(CENTER);
+  image(start, width/2, height/2);
 }
