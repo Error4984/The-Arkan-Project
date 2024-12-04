@@ -5,7 +5,7 @@
 * Eli: Narrative Design, Sound Design
 * Henry: Animation/Composer
 * James: Modeler, Map and Character Design
-* Owen: Quality Assurance/Tester
+* Owen: Quality Assurance/Tester, Concept Artist
 * Scotty-Doo: Lead Developer
 
 # Overview of Game 1
