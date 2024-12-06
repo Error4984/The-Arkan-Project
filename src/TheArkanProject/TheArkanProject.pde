@@ -242,12 +242,12 @@ void startScreen () {
     case 5:
       background(0);
       fill(255);
-      text("And most of the surrounding terrain being uncharted", width/2, height/4*3);
+      text("And most of the surrounding terrain \n being uncharted", width/2, height/4*3);
       break;
     case 6:
       background(0);
       fill(255);
-      text("We were going to investigate their last known location", width/2, height/4*3);
+      text("We were going to investigate \n their last known location", width/2, height/4*3);
       break;
     case 7:
       background(0);
