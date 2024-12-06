@@ -22,3 +22,6 @@ The game focuses on being a scary survival game that incorporates engaging story
 # Game Over Screen
 ![ArkanGameOver2](https://github.com/user-attachments/assets/c3ea078c-6b30-4f54-844f-0abd515b819b)
 
+
+# Company Factions/Manufacturers
+![Screenshot 2024-12-06 at 9 07 14 AM](https://github.com/user-attachments/assets/a0c5bcd8-c44e-41f7-b4a0-35c0145e77a4)
