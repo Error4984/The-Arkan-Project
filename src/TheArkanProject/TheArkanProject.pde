@@ -14,7 +14,7 @@ Button[] buttons=new Button[5];
 
 Player p1;
 boolean play = false;
-PImage start, over;
+PImage start, startGIF, over;
 Timer eTimer, wTimer;
 int welcomeCounter;
 
@@ -24,6 +24,7 @@ void setup() {
   size(1050, 750);
   background(0);
   start = loadImage("HenryStartArkan2.png");
+  startGIF = loadImage("HenryArkanStartGIF.gif");
   over = loadImage("HenryArkanGameOver3.png");
   start.resize(width, height);
   over.resize(width, height);
@@ -37,7 +38,7 @@ void setup() {
   eTimer = new Timer(1000);
   eTimer.start();
   //welcome timer
-  wTimer = new Timer(5000);
+  wTimer = new Timer(2000);
   wTimer.start();
   welcomeCounter=0;
 }
@@ -216,71 +217,75 @@ void startScreen () {
   if (wTimer.isFinished()) {
     wTimer.start();
     welcomeCounter++;
-    textAlign(CENTER);
-    textSize(50);
-    switch(welcomeCounter) {
-    case 1:
-      background(0);
-      fill(255);
-      text("We lost contact with our cargo jet", width/2, height/4*3);
-      break;
-    case 2:
-      background(0);
-      fill(255);
-      text("Which is an unusual occurrence", width/2, height/4*3);
-      break;
-    case 3:
-      background(0);
-      fill(255);
-      text("There's no reason it should have", width/2, height/4*3);
-      break;
-    case 4:
-      background(0);
-      fill(255);
-      text("Due to a lack of life in the forest below", width/2, height/4*3);
-      break;
-    case 5:
-      background(0);
-      fill(255);
-      text("And most of the surrounding terrain \n being uncharted", width/2, height/4*3);
-      break;
-    case 6:
-      background(0);
-      fill(255);
-      text("We were going to investigate \n their last known location", width/2, height/4*3);
-      break;
-    case 7:
-      background(0);
-      fill(255);
-      text("But all of a sudden", width/2, height/4*3);
-      break;
-    case 8:
-      background(0);
-      fill(255);
-      text("We got attacked", width/2, height/4*3);
-      break;
-    case 9:
-      background(0);
-      fill(255);
-      text("By what seemed to be a vine", width/2, height/4*3);
-      break;
-    case 10:
-      background(0);
-      fill(255);
-      text("And the last thing I remember", width/2, height/4*3);
-      break;
-   case 11:
-      background(0);
-      fill(255);
-      text("Was waking up here", width/2, height/4*3);
-      break;
-    default:
-      startMenu();
-      println("None");
-      break;
-    }
   }
-  if (welcomeCounter>2) {
+  textAlign(CENTER);
+  textSize(50);
+  switch(welcomeCounter) {
+  case 0:
+    background(0);
+    image(start, width/2, height/2);
+  case 1:
+    background(0);
+    fill(255);
+    text("We lost contact with our cargo jet", width/2, height/4*3);
+    break;
+  case 2:
+    background(0);
+    fill(255);
+    text("Which is an unusual occurrence", width/2, height/4*3);
+    break;
+  case 3:
+    background(0);
+    fill(255);
+    text("There's no reason it should have", width/2, height/4*3);
+    break;
+  case 4:
+    background(0);
+    fill(255);
+    text("Due to a lack of life in the forest below", width/2, height/4*3);
+    break;
+  case 5:
+    background(0);
+    fill(255);
+    text("And most of the surrounding terrain \n being uncharted", width/2, height/4*3);
+    break;
+  case 6:
+    background(0);
+    fill(255);
+    text("We were going to investigate \n their last known location", width/2, height/4*3);
+    break;
+  case 7:
+    background(0);
+    fill(255);
+    text("But all of a sudden", width/2, height/4*3);
+    break;
+  case 8:
+    background(0);
+    fill(255);
+    text("We got attacked", width/2, height/4*3);
+    break;
+  case 9:
+    background(0);
+    fill(255);
+    text("By what seemed to be a vine", width/2, height/4*3);
+    break;
+  case 10:
+    background(0);
+    fill(255);
+    text("And the last thing I remember", width/2, height/4*3);
+    break;
+  case 11:
+    background(0);
+    fill(255);
+    text("Was waking up here", width/2, height/4*3);
+    break;
+  default:
+    startMenu();
+    println("None");
+    break;
+  }
+
+  if (welcomeCounter>11) {
     buttons[0].display();
     buttons[0].hover(mouseX, mouseY);
     buttons[1].display();
