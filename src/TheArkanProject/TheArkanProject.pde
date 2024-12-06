@@ -222,12 +222,57 @@ void startScreen () {
     case 1:
       background(0);
       fill(255);
-      text("You are about to experience...", width/2, height/4*3);
+      text("We lost contact with our cargo jet", width/2, height/4*3);
       break;
     case 2:
       background(0);
       fill(255);
-      text("the worst game ever made.", width/2, height/4*3);
+      text("Which is an unusual occurrence", width/2, height/4*3);
+      break;
+    case 3:
+      background(0);
+      fill(255);
+      text("There's no reason it should have", width/2, height/4*3);
+      break;
+    case 4:
+      background(0);
+      fill(255);
+      text("Due to a lack of life in the forest below", width/2, height/4*3);
+      break;
+    case 5:
+      background(0);
+      fill(255);
+      text("And most of the surrounding terrain being uncharted", width/2, height/4*3);
+      break;
+    case 6:
+      background(0);
+      fill(255);
+      text("We were going to investigate their last known location", width/2, height/4*3);
+      break;
+    case 7:
+      background(0);
+      fill(255);
+      text("But all of a sudden", width/2, height/4*3);
+      break;
+    case 8:
+      background(0);
+      fill(255);
+      text("We got attacked", width/2, height/4*3);
+      break;
+    case 9:
+      background(0);
+      fill(255);
+      text("By what seemed to be a vine", width/2, height/4*3);
+      break;
+    case 10:
+      background(0);
+      fill(255);
+      text("And the last thing I remember", width/2, height/4*3);
+      break;
+   case 11:
+      background(0);
+      fill(255);
+      text("Was waking up here", width/2, height/4*3);
       break;
     default:
       startMenu();
