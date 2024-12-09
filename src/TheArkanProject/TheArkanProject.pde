@@ -12,6 +12,8 @@ ArrayList<Spawner> spawners = new ArrayList<Spawner>();
 ArrayList<Tunneler> tunnelers = new ArrayList<Tunneler>();
 Button[] buttons=new Button[5];
 PImage[] heli = new PImage[13];
+PImage[] crash = new PImage[8];
+
 
 Player p1;
 boolean play = false;
@@ -54,6 +56,15 @@ void setup() {
   heli[9] = loadImage("heli10.png");
   heli[10] = loadImage("heli11.png");
   heli[11] = loadImage("heli12.png");
+
+  crash[0] = loadImage("crash1.png");
+  crash[1] = loadImage("crash2.png");
+  crash[2] = loadImage("crash3.png");
+  crash[3] = loadImage("crash4.png");
+  crash[4] = loadImage("crash5.png");
+  crash[5] = loadImage("crash6.png");
+  crash[6] = loadImage("crash7.png");
+  crash[7] = loadImage("crash8.png");
 }
 
 void draw() {
@@ -298,6 +309,11 @@ void startScreen () {
     println("None");
     break;
   }
+  if (welcomeCounter<=11) {
+    crash[frameCount%8].resize(400, 400);
+    image(crash[frameCount%8], width/2, height/2-100);
+  }
+
   if (welcomeCounter<8) {
     heli[frameCount%8].resize(400, 400);
     image(heli[frameCount%8], width/2, height/2-100);
