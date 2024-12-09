@@ -16,13 +16,15 @@ PImage[] crash = new PImage[8];
 
 
 Player p1;
-boolean play = false;
+boolean play, gameOver;
 PImage start, startGIF, over;
 Timer eTimer, wTimer;
 int welcomeCounter;
 
 
 void setup() {
+  gameOver = false;
+  play = false;
   panel = new InfoPanel();
   size(1050, 750);
   background(0);
@@ -68,7 +70,7 @@ void setup() {
 }
 
 void draw() {
-  if (!play) {
+  if (!play && !gameOver) {
     startScreen();
   } else {
     background(255);
@@ -216,10 +218,11 @@ void draw() {
 }
 
 void mousePressed() {
-  if (play == false && !p1.dead()) {
+  if (play == false && !gameOver) {
     for (int i=0; i<buttons.length; i++) {
       if (buttons[0].on) {
         play = true;
+        p1.health = 100;
       } else {
         play = false;
       }
@@ -229,12 +232,23 @@ void mousePressed() {
     welcomeCounter=1000;
     startMenu();
   }
+  if (play == false && gameOver) {
+    for (int i=0; i<buttons.length; i++) {
+      if (buttons[2].on) {
+        gameOver = false;
+        startScreen();
+      } else {
+        play = false;
+      }
+    }
+  }
 }
 
 void gameOver () {
   image(over, width/2, height/2);
   buttons[2].display();
   buttons[2].hover(mouseX, mouseY);
+  gameOver = true;
   play = false;
 }
 
