@@ -11,6 +11,7 @@ ArrayList<Ranged> rangeds = new ArrayList<Ranged>();
 ArrayList<Spawner> spawners = new ArrayList<Spawner>();
 ArrayList<Tunneler> tunnelers = new ArrayList<Tunneler>();
 Button[] buttons=new Button[5];
+PImage[] heli = new PImage[13];
 
 Player p1;
 boolean play = false;
@@ -41,6 +42,18 @@ void setup() {
   wTimer = new Timer(2000);
   wTimer.start();
   welcomeCounter=0;
+  heli[0] = loadImage("heli1.png");
+  heli[1] = loadImage("heli2.png");
+  heli[2] = loadImage("heli3.png");
+  heli[3] = loadImage("heli4.png");
+  heli[4] = loadImage("heli5.png");
+  heli[5] = loadImage("heli6.png");
+  heli[6] = loadImage("heli7.png");
+  heli[7] = loadImage("heli8.png");
+  heli[8] = loadImage("heli9.png");
+  heli[9] = loadImage("heli10.png");
+  heli[10] = loadImage("heli11.png");
+  heli[11] = loadImage("heli12.png");
 }
 
 void draw() {
@@ -192,7 +205,7 @@ void draw() {
 }
 
 void mousePressed() {
-  if (play == false && !p1.dead() && welcomeCounter>2) {
+  if (play == false && !p1.dead()) {
     for (int i=0; i<buttons.length; i++) {
       if (buttons[0].on) {
         play = true;
@@ -211,6 +224,7 @@ void gameOver () {
   image(over, width/2, height/2);
   buttons[2].display();
   buttons[2].hover(mouseX, mouseY);
+  play = false;
 }
 
 void startScreen () {
@@ -283,6 +297,10 @@ void startScreen () {
     startMenu();
     println("None");
     break;
+  }
+  if (welcomeCounter<8) {
+    heli[frameCount%8].resize(400, 400);
+    image(heli[frameCount%8], width/2, height/2-100);
   }
 
   if (welcomeCounter>11) {
