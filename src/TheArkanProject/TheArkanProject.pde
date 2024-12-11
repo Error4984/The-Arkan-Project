@@ -13,6 +13,8 @@ ArrayList<Tunneler> tunnelers = new ArrayList<Tunneler>();
 Button[] buttons=new Button[5];
 PImage[] heli = new PImage[13];
 PImage[] crash = new PImage[8];
+PImage[] fall = new PImage[7];
+
 
 
 Player p1;
@@ -67,6 +69,14 @@ void setup() {
   crash[5] = loadImage("crash6.png");
   crash[6] = loadImage("crash7.png");
   crash[7] = loadImage("crash8.png");
+  
+  fall[0] = loadImage("fall1.png");
+  fall[1] = loadImage("fall2.png");
+  fall[2] = loadImage("fall3.png");
+  fall[3] = loadImage("fall4.png");
+  fall[4] = loadImage("fall5.png");
+  fall[5] = loadImage("fall6.png");
+  
 }
 
 void draw() {
@@ -324,6 +334,11 @@ void startScreen () {
     break;
   }
   if (welcomeCounter<=11) {
+    fall[frameCount%6].resize(400, 400);
+    image(fall[frameCount%6], width/2, height/2-100);
+  }
+  
+  if (welcomeCounter<=9) {
     crash[frameCount%8].resize(400, 400);
     image(crash[frameCount%8], width/2, height/2-100);
   }
@@ -332,6 +347,7 @@ void startScreen () {
     heli[frameCount%8].resize(400, 400);
     image(heli[frameCount%8], width/2, height/2-100);
   }
+
 
   if (welcomeCounter>11) {
     buttons[0].display();
