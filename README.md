@@ -24,4 +24,4 @@ The game focuses on being a scary survival game that incorporates engaging story
 
 
 # Company Factions/Manufacturers
-![Screenshot 2024-12-06 at 9 07 14 AM](https://github.com/user-attachments/assets/a0c5bcd8-c44e-41f7-b4a0-35c0145e77a4)
+![Screenshot 2024-12-18 at 7 40 48 AM](https://github.com/user-attachments/assets/f28661e5-31be-4ec9-a33b-b323d1b8fc2e)
